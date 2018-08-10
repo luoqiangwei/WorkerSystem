@@ -44,7 +44,10 @@
                 </div>
                 <div class="form-group">
                     <label>性别</label>
-                    <input type="text" name="sex" class="form-control" id="csex" value="${userInfo.sex}"><br>
+                    <select class="form-control" name="sex" id="csex">
+                        <option <c:if test="${userInfo.sex}">selected</c:if> value="true">男</option>
+                        <option selected<c:if test="${userInfo.sex}">selected</c:if> value="false">女</option>
+                    </select><br>
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="修改">
