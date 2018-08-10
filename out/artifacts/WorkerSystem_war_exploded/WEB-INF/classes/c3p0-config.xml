@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql://ovea4:3306/studio?useSSL=false</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">studio</property>
+		<property name="password">qE2$@%o^$0kj@E256.,Ad_14</property>
+		<property name="acquireIncrement">3</property>
+		<property name="initialPoolSize">5</property>
+		<property name="minPoolSize">2</property>
+		<property name="maxPoolSize">100</property>
+	</default-config>
+</c3p0-config>
