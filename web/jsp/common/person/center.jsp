@@ -45,8 +45,8 @@
                 <div class="form-group">
                     <label>性别</label>
                     <select class="form-control" name="sex" id="csex">
-                        <option <c:if test="${userInfo.sex}">selected</c:if> value="true">男</option>
-                        <option <c:if test="${userInfo.sex}">selected</c:if> value="false">女</option>
+                        <option <c:if test="${userInfo.sex == 'true'}">selected</c:if> value="true">男</option>
+                        <option <c:if var="result" test="${userInfo.sex == 'false'}">selected</c:if> value="false">女</option>
                     </select><br>
                 </div>
                 <div class="form-group">
