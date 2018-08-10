@@ -38,11 +38,16 @@ public class RegisterService {
         // 加载配置文件
         Properties props = new Properties();
         try {
-            props.load(new BufferedInputStream(new FileInputStream(new File("D:\\Store\\CAH\\Creat\\2018\\config\\javaEE\\idea\\WorkerSystem\\config.properties"))));
+            props.load(getClass().getClassLoader().getResourceAsStream("config.properties"));
         } catch (IOException e) {
             throw new RuntimeException("配置文件读取失败");
         }
 
+        try {
+            props.load(new BufferedInputStream(new FileInputStream(new File(props.getProperty("configPath")))));
+        } catch (IOException e) {
+            throw new RuntimeException("配置文件读取失败");
+        }
 
         nf = new Nanoflake(1L);
         rsa = new RSA(props.getProperty("pubkeyPath"), props.getProperty("PrikeyPath"));

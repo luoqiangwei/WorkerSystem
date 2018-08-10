@@ -7,6 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c11ef8-bd9a-4513-9263-c79737d9554c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/common/person/center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/common/person/center.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,10 +49,10 @@
           <entry key="class" value="1" />
           <entry key="css" value="39" />
           <entry key="html" value="11" />
-          <entry key="java" value="90" />
+          <entry key="java" value="97" />
           <entry key="js" value="9" />
           <entry key="jsp" value="70" />
-          <entry key="properties" value="7" />
+          <entry key="properties" value="8" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
@@ -58,10 +61,10 @@
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="39" />
           <entry key="HTML" value="11" />
-          <entry key="JAVA" value="90" />
+          <entry key="JAVA" value="97" />
           <entry key="JSP" value="70" />
           <entry key="JavaScript" value="9" />
-          <entry key="Properties" value="7" />
+          <entry key="Properties" value="8" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -69,10 +72,10 @@
         <counts>
           <entry key="css" value="843" />
           <entry key="html" value="19" />
-          <entry key="java" value="4276" />
+          <entry key="java" value="4550" />
           <entry key="js" value="204" />
-          <entry key="jsp" value="3090" />
-          <entry key="properties" value="6" />
+          <entry key="jsp" value="3156" />
+          <entry key="properties" value="18" />
           <entry key="xml" value="46" />
         </counts>
       </usages-collector>
@@ -80,10 +83,10 @@
         <counts>
           <entry key="CSS" value="843" />
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="4276" />
-          <entry key="JSP" value="3090" />
+          <entry key="JAVA" value="4550" />
+          <entry key="JSP" value="3156" />
           <entry key="JavaScript" value="204" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="18" />
           <entry key="XML" value="46" />
         </counts>
       </usages-collector>
@@ -92,10 +95,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/jsp/common/person/center.jsp">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1106">
-              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            <state relative-caret-position="295">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -171,13 +192,13 @@
         <option value="$PROJECT_DIR$/web/css/register.css" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/web/js/common/center.js" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java" />
         <option value="$PROJECT_DIR$/web/css/common/person/center.css" />
-        <option value="$PROJECT_DIR$/src/config.properties" />
         <option value="$PROJECT_DIR$/src/c3p0-config.xml" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java" />
         <option value="$PROJECT_DIR$/web/jsp/common/person/center.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java" />
+        <option value="$PROJECT_DIR$/src/config.properties" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java" />
       </list>
     </option>
   </component>
@@ -206,8 +227,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="709" />
-    <option name="y" value="270" />
+    <option name="x" value="618" />
+    <option name="y" value="111" />
     <option name="width" value="1195" />
     <option name="height" value="882" />
   </component>
@@ -255,52 +276,6 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ovea" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -313,7 +288,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533911825794" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533914209887" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -602,7 +577,7 @@
       <workItem from="1533900494701" duration="1709000" />
       <workItem from="1533905863087" duration="1968000" />
       <workItem from="1533908422370" duration="758000" />
-      <workItem from="1533909441059" duration="2607000" />
+      <workItem from="1533909441059" duration="4216000" />
     </task>
     <servers />
   </component>
@@ -639,7 +614,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171324000" />
+    <option name="totallyTimeSpent" value="172933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,7 +626,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="709" y="270" width="1195" height="882" extended-state="0" />
+    <frame x="618" y="111" width="1195" height="882" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27577093" />
@@ -957,7 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.properties" />
     <entry file="file://$PROJECT_DIR$/web/css/common/person/center.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -969,30 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1014,20 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1054,8 +990,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/common/person/center.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        <state relative-caret-position="245">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/PersonCenterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/RegisterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
         </state>
       </provider>
     </entry>
