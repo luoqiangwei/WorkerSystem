@@ -13,7 +13,7 @@ var phoneNumberCheck = function () {
         phoneNumber.value = phoneNumber.value.substring(0, phoneNumber.value.length - 1);
         phoneNumberInput.innerText = "只能输入11位数字！";
     }
-} 
+}
 
 var clear = function () {
 
