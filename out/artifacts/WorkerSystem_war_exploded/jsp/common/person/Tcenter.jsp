@@ -20,7 +20,7 @@
         <h3>基本信息</h3>
         <div class="form-group">
             <p class="perr">${form}</p>
-            <form action="/PersonCenter" method="post">
+            <form action="/TeacherCenter" method="post">
                 <input type="hidden" name="method" value="baseInfoChange">
                 <div class="form-group">
                     <label for="cemail">电子邮箱</label>
