@@ -15,6 +15,6 @@ public class PersonCenterServlet extends BaseServlet {
         String qq = req.getParameter("qq");
         String sex = req.getParameter("sex");
 
-        return "f:/jsp/common/person/center.jsp";
+        return "f:/Center";
     }
 }
