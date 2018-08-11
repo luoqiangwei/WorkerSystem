@@ -38,7 +38,7 @@ public class TeacherCenterServlet extends BaseServlet {
             userInfo.setQq(qq);
         }
 
-        if(!sex.equals("true")){
+        if(sex.equals("true")){
             userInfo.setSex(true);
         }else {
             userInfo.setSex(false);

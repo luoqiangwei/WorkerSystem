@@ -152,8 +152,7 @@ public class RSA {
             byte[] mt = m.toByteArray();
             //System.out.println("PlainText is ");
 
-            StringBuilder sb = new StringBuilder(new String(mt));
-
+            StringBuilder sb = new StringBuilder(new String(mt, "UTF-8"));
             b.close();
             f.close();
             // 去除添加在首部的0

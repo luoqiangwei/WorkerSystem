@@ -41,9 +41,7 @@ public class TeacherCenterService {
         Teacher_information ti = new Teacher_information();
         ti.setUser_id(tm.getUser_id());
         if(tm.getName() != null && !tm.getName().equals("")){
-            System.out.println(tm.getName());
             ti.setName(rsa.enCoding(tm.getName()));
-            System.out.println(rsa.deCoding(ti.getName()));
         }
         if(tm.getPhone_number() != null && !tm.getPhone_number().equals("")){
             ti.setPhone_number(rsa.enCoding(tm.getPhone_number()));
