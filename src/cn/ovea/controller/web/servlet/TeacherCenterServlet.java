@@ -1,5 +1,6 @@
 package cn.ovea.controller.web.servlet;
 
+import cn.ovea.controller.service.TeacherCenterService;
 import cn.ovea.model.Teacher_information;
 import cn.ovea.tool.servlet.BaseServlet;
 
@@ -9,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/TeacherCenter")
 public class TeacherCenterServlet extends BaseServlet {
+    TeacherCenterService TCS = new TeacherCenterService();
+
     public String baseInfoChange(HttpServletRequest req, HttpServletResponse resp){
         Teacher_information userInfo = (Teacher_information) req.getSession().getAttribute("userInfo");
         String sid = req.getParameter("sid");
@@ -40,6 +43,7 @@ public class TeacherCenterServlet extends BaseServlet {
         }else {
             userInfo.setSex(false);
         }
+        TCS.baseSet(userInfo);
 
         return "f:/Center";
     }

@@ -41,6 +41,15 @@ public class Teacher_informationDao {
         }
     }
 
+    public void updateInfo(Teacher_information ti){
+        String sql = "update teacher_information set staff_id=?, name=?, phone_number=?, qq=?, sex=? where user_id=?";
+        try {
+            qr.update(sql, ti.getStaff_id(), ti.getName(), ti.getPhone_number(), ti.getQq(), ti.isSex(), ti.getUser_id());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public Teacher_information findByUser(String userId) {
         String sql = "select * from teacher_information where is_effective=1 and user_id =?";
         try {
