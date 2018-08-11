@@ -12,6 +12,7 @@
     <title>个人中心</title>
     <jsp:include page="/jsp/templete/setting.html"></jsp:include>
     <link rel="stylesheet" href="/css/common/person/center.css">
+    <script type="text/javascript" src="/js/common/tcenter.js"></script>
 </head>
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
@@ -35,8 +36,8 @@
                     <input type="text" name="name" class="form-control" id="cname" value="${userInfo.name}" placeholder="Your name"><br>
                 </div>
                 <div class="form-group">
-                    <label>电话号码</label>
-                    <input type="text" name="phoneNumber" class="form-control" id="cPhoneNumber" value="${userInfo.phone_number}" placeholder="Your Phone Number"><br>
+                    <label>电话号码<p class="perr" id="perro">${phome}</p></label>
+                    <input type="text" oninput="phoneNumberCheck()"  name="phoneNumber" class="form-control" id="cPhoneNumber" value="${userInfo.phone_number}" placeholder="Your Phone Number"><br>
                 </div>
                 <div class="form-group">
                     <label>QQ</label>
