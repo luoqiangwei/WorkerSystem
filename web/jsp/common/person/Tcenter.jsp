@@ -11,7 +11,7 @@
 <head>
     <title>个人中心</title>
     <jsp:include page="/jsp/templete/setting.html"></jsp:include>
-    <link rel="stylesheet" href="/css/common/person/center.css">
+    <link rel="stylesheet" href="/css/common/person/tcenter.css">
     <script type="text/javascript" src="/js/common/Tcenter.js"></script>
 </head>
 <body>
