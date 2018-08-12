@@ -2,7 +2,9 @@ package cn.ovea.controller.service;
 
 import cn.ovea.controller.dao.Teacher_informationDao;
 import cn.ovea.model.Teacher_information;
+import cn.ovea.model.exception.User_informationException;
 import cn.ovea.tool.commons.RSA;
+import cn.ovea.tool.commons.SHA;
 import cn.ovea.tool.commons.exception.RSAException;
 
 import java.io.BufferedInputStream;
@@ -14,6 +16,7 @@ import java.util.Properties;
 public class TeacherCenterService {
     Teacher_informationDao TID = new Teacher_informationDao();
     RSA rsa;
+    SHA sha;
 
     public TeacherCenterService(){
         // 加载配置文件
@@ -35,6 +38,7 @@ public class TeacherCenterService {
         } catch (RSAException e) {
             e.printStackTrace();
         }
+        sha = new SHA();
     }
 
     public void baseSet(Teacher_information tm){
@@ -52,5 +56,18 @@ public class TeacherCenterService {
         ti.setSex(tm.isSex());
         ti.setStaff_id(rsa.enCoding(tm.getStaff_id()));
         TID.updateInfo(ti);
+    }
+
+    public void checkOPwd(Teacher_information tm, String opwd) throws User_informationException {
+        if(!tm.getPassword().equals(sha.SHA512Encoding(opwd))){
+            throw new User_informationException("旧密码输入错误。");
+        }
+    }
+
+    public void pwdSet(Teacher_information tm, String npwd){
+        Teacher_information ti = new Teacher_information();
+        ti.setUser_id(tm.getUser_id());
+        ti.setPassword(sha.SHA512Encoding(npwd));
+        TID.updatePasswd(ti);
     }
 }
