@@ -21,14 +21,14 @@
         <h3>基本信息</h3>
         <div class="form-group">
             <p class="perr">${form}</p>
-            <form action="/TeacherCenter" method="post">
+            <form action="/MemberCenter" method="post">
                 <input type="hidden" name="method" value="baseInfoChange">
                 <div class="form-group">
                     <label for="cemail">电子邮箱</label>
                     <input type="email" name="email" class="form-control" id="cemail" value="${userInfo.email}" disabled="disabled"><br>
                 </div>
                 <div class="form-group">
-                    <label>教工号<p class="perr" id="serro">${sid}</p></label>
+                    <label>学号<p class="perr" id="serro">${sid}</p></label>
                     <input type="text" oninput="SidCheck();" name="sid" class="form-control" id="csid" value="${userInfo.staff_id}" placeholder="Your Staff ID"><br>
                 </div>
                 <div class="form-group">

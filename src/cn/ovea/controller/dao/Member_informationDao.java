@@ -94,4 +94,22 @@ public class Member_informationDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void updateInfo(Member_information mi){
+        String sql = "update member_information set student_id=?, name=?, phone_number=?, qq=?, sex=? where user_id=?";
+        try {
+            qr.update(sql, mi.getStudent_id(), mi.getName(), mi.getPhone_number(), mi.getQq(), mi.isSex(), mi.getUser_id());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void updatePasswd(Member_information mi){
+        String sql = "update member_information set password=? where user_id=?";
+        try {
+            qr.update(sql, mi.getPassword(), mi.getUser_id());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
