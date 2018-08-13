@@ -12,7 +12,7 @@
     <title>个人中心</title>
     <jsp:include page="/jsp/templete/setting.html"></jsp:include>
     <link rel="stylesheet" href="/css/common/person/tcenter.css">
-    <script type="text/javascript" src="/js/common/Tcenter.js"></script>
+    <script type="text/javascript" src="/js/common/person/Tcenter.js"></script>
 </head>
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
