@@ -34,7 +34,7 @@ public class LoginServlet extends BaseServlet {
         if(req.getSession().getAttribute("loginError") != null) {
             String vCode = (String) req.getSession().getAttribute("vCode");
             String vcode = req.getParameter("vcode");
-            if(vcode.equals("")){
+            if(vcode.trim().equals("")){
                 req.setAttribute("form", "所有信息必须都填写");
                 reSet(req, email, password);
                 count++;
@@ -57,7 +57,7 @@ public class LoginServlet extends BaseServlet {
             }
         }
 
-        if(email.equals("") || password.equals("")){
+        if(email.trim().equals("") || password.trim().equals("")){
             req.setAttribute("form", "所有信息必须都填写");
             reSet(req, email, password);
             count++;
@@ -104,9 +104,9 @@ public class LoginServlet extends BaseServlet {
     }
 
     private void reSet(HttpServletRequest req, String email, String password){
-        if(!email.equals(""))
+        if(!email.trim().equals(""))
             req.setAttribute("lemail", email);
-        if(!password.equals(""))
+        if(!password.trim().equals(""))
             req.setAttribute("lpassword", password);
     }
 

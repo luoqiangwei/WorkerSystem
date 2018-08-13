@@ -44,13 +44,13 @@ public class MemberCenterService {
     public void baseSet(Member_information mm){
         Member_information mi = new Member_information();
         mi.setUser_id(mm.getUser_id());
-        if(mm.getName() != null && !mm.getName().equals("")){
+        if(mm.getName() != null && !mm.getName().trim().equals("")){
             mi.setName(rsa.enCoding(mm.getName()));
         }
-        if(mm.getPhone_number() != null && !mm.getPhone_number().equals("")){
+        if(mm.getPhone_number() != null && !mm.getPhone_number().trim().equals("")){
             mi.setPhone_number(rsa.enCoding(mm.getPhone_number()));
         }
-        if(mm.getQq() != null && !mm.getQq().equals("")){
+        if(mm.getQq() != null && !mm.getQq().trim().equals("")){
             mi.setQq(rsa.enCoding(mm.getQq()));
         }
         mi.setSex(mm.isSex());

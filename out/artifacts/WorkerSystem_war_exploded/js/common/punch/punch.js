@@ -2,7 +2,7 @@ var getLocation = function () {
     if(navigator.geolocation){
         var getOptions = {
             enableHighAccuracy:true,
-            timeout: 1000
+            timeout: 2000
         };
         navigator.geolocation.getCurrentPosition(getSuccess, getError, getOptions);
     }else {

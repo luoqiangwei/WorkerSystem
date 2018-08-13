@@ -60,28 +60,28 @@ public class LoginService {
         Teacher_information ti = TID.findByUser(userId);
         if(mi != null){
             mi.setStudent_id(rsa.deCoding(mi.getStudent_id()));
-            if(mi.getName() != null && !"".equals(mi.getName()))
+            if(mi.getName() != null && !"".equals(mi.getName().trim()))
                 mi.setName(rsa.deCoding(mi.getName()));
             mi.setEmail(rsa.deCoding(mi.getEmail()));
-            if(mi.getPhone_number() != null && !"".equals(mi.getPhone_number()))
+            if(mi.getPhone_number() != null && !"".equals(mi.getPhone_number().trim()))
                 mi.setPhone_number(rsa.deCoding(mi.getPhone_number()));
-            if(mi.getQq() != null && !"".equals(mi.getQq()))
+            if(mi.getQq() != null && !"".equals(mi.getQq().trim()))
                 mi.setQq(rsa.deCoding(mi.getQq()));
             mi.setGrade(rsa.deCoding(mi.getGrade()));
-            if(mi.getHead_image_uri() != null && !"".equals(mi.getHead_image_uri()))
+            if(mi.getHead_image_uri() != null && !"".equals(mi.getHead_image_uri().trim()))
                 mi.setHead_image_uri(rsa.deCoding(mi.getHead_image_uri()));
             req.getSession().setAttribute("userInfo", mi);
         }
         if(ti != null){
             ti.setStaff_id(rsa.deCoding(ti.getStaff_id()));
-            if(ti.getName() != null && !"".equals(ti.getName()))
+            if(ti.getName() != null && !"".equals(ti.getName().trim()))
                 ti.setName(rsa.deCoding(ti.getName()));
             ti.setEmail(rsa.deCoding(ti.getEmail()));
-            if(ti.getPhone_number() != null && !"".equals(ti.getPhone_number()))
+            if(ti.getPhone_number() != null && !"".equals(ti.getPhone_number().trim()))
                 ti.setPhone_number(rsa.deCoding(ti.getPhone_number()));
-            if(ti.getQq() != null && !"".equals(ti.getQq()))
+            if(ti.getQq() != null && !"".equals(ti.getQq().trim()))
                 ti.setQq(rsa.deCoding(ti.getQq()));
-            if(ti.getHead_image_uri() != null && !"".equals(ti.getHead_image_uri()))
+            if(ti.getHead_image_uri() != null && !"".equals(ti.getHead_image_uri().trim()))
                 ti.setHead_image_uri(rsa.deCoding(ti.getHead_image_uri()));
             req.getSession().setAttribute("userInfo", ti);
         }

@@ -24,21 +24,21 @@ public class TeacherCenterServlet extends BaseServlet {
         String qq = req.getParameter("qq");
         String sex = req.getParameter("sex");
 
-        if(sid.equals("") || sid.length() != 4){
+        if(sid.trim().equals("") || sid.length() != 4){
             req.setAttribute("sid", "职工号不满足规则（必须为4位）");
             return "f:/Center";
         }
         userInfo.setStaff_id(sid);
 
-        if(!name.equals("")){
+        if(!name.trim().equals("")){
             userInfo.setName(name);
         }
 
-        if(!phoneNumber.equals("")){
+        if(!phoneNumber.trim().equals("")){
             userInfo.setPhone_number(phoneNumber);
         }
 
-        if(!qq.equals("")){
+        if(!qq.trim().equals("")){
             userInfo.setQq(qq);
         }
 
@@ -58,7 +58,7 @@ public class TeacherCenterServlet extends BaseServlet {
         String pwd = req.getParameter("pwd");
         String rpwd = req.getParameter("rpwd");
 
-        if(opwd.equals("") || pwd.equals("") || rpwd.equals("")){
+        if(opwd.trim().equals("") || pwd.trim().equals("") || rpwd.trim().equals("")){
             req.setAttribute("pform", "有未填写的值。");
             req.setAttribute("TCType", "1");
             return "f:/Center";

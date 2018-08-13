@@ -13,17 +13,19 @@
     <jsp:include page="/jsp/templete/setting.html"></jsp:include>
     <link rel="stylesheet" href="/css/common/punch/punch.css">
     <script type="text/javascript" src="/js/common/punch/punch.js"></script>
-    <script type="text/javascript">
-        onload = getLocation;
-    </script>
+    <script type="text/javascript">onload = getLocation;</script>
 </head>
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
 <div class="center">
-    <div class="form-group form-main">
+    <div class="form-group">
         <form action="/Punch" method="post">
             <input type="hidden" name="method" value="punch">
             <input type="hidden" name="location" value="">
+            <div class="form-group">
+                <label>备注</label>
+                <input type="text" name="remake" class="form-control" placeholder="Enter your remake">
+            </div>
             <div class="form-group">
                 <input type="submit" id="sub" class="btn btn-light" value="打卡" disabled="disabled">
             </div>

@@ -39,7 +39,7 @@ public class RegisterServlet extends BaseServlet {
 
         //System.err.println(vCode);
         //System.err.println(vcode);
-        if(vcode.equals("") || email.equals("") || sid.equals("") || password.equals("") || repassword.equals("")){
+        if(vcode.trim().equals("") || email.trim().equals("") || sid.trim().equals("") || password.trim().equals("") || repassword.trim().equals("")){
             req.setAttribute("form", "所有信息必须都填写");
             reSet(req, email, sid, password);
             return "f:/jsp/register.jsp";
@@ -97,11 +97,11 @@ public class RegisterServlet extends BaseServlet {
     }
 
     private void reSet(HttpServletRequest req, String email, String sid, String password){
-        if(!email.equals(""))
+        if(!email.trim().equals(""))
             req.setAttribute("remail", email);
-        if(!sid.equals(""))
+        if(!sid.trim().equals(""))
             req.setAttribute("rsid", sid);
-        if(!password.equals(""))
+        if(!password.trim().equals(""))
             req.setAttribute("rpassword", password);
     }
 }

@@ -44,13 +44,13 @@ public class TeacherCenterService {
     public void baseSet(Teacher_information tm){
         Teacher_information ti = new Teacher_information();
         ti.setUser_id(tm.getUser_id());
-        if(tm.getName() != null && !tm.getName().equals("")){
+        if(tm.getName() != null && !tm.getName().trim().equals("")){
             ti.setName(rsa.enCoding(tm.getName()));
         }
-        if(tm.getPhone_number() != null && !tm.getPhone_number().equals("")){
+        if(tm.getPhone_number() != null && !tm.getPhone_number().trim().equals("")){
             ti.setPhone_number(rsa.enCoding(tm.getPhone_number()));
         }
-        if(tm.getQq() != null && !tm.getQq().equals("")){
+        if(tm.getQq() != null && !tm.getQq().trim().equals("")){
             ti.setQq(rsa.enCoding(tm.getQq()));
         }
         ti.setSex(tm.isSex());

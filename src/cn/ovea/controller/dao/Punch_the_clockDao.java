@@ -30,7 +30,7 @@ public class Punch_the_clockDao {
     }
 
     public void add(Punch_the_clock punch_the_clock){
-        String sql = "insert into mission_submission values(?,?,?,?,?,?,?)";
+        String sql = "insert into punch_the_clock values(?,?,?,?,?,?,?)";
         Object[] params = {punch_the_clock.getPunch_id(), punch_the_clock.getUser_id(), punch_the_clock.getPunch_date(), punch_the_clock.getPunch_location(), punch_the_clock.getPunch_ip(), punch_the_clock.getRemarks(), punch_the_clock.isType()};
         try {
             qr.update(sql, params);
