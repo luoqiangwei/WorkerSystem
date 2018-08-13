@@ -17,9 +17,14 @@
 <body>
 <jsp:include page="templete/top.jsp"></jsp:include>
     <div class="center">
-        <ul>
-            <li><a>231321</a></li>
-        </ul>
+        <div class="menu">
+            <ul>
+                <c:if test="${userInfo != null}">
+                    <li><a href="/jsp/common/punch/punch.jsp">打卡</a></li>
+                    <li><a href="/jsp/common/record/learningRecords.jsp">编写日志</a></li>
+                </c:if>
+            </ul>
+        </div>
     </div>
 <jsp:include page="templete/foot.html"></jsp:include>
 </body>

@@ -18,12 +18,12 @@
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
 <div class="center">
-    <div class="form-group">
+    <div class="form-control">
+        <h3>打卡</h3>
         <form action="/Punch" method="post">
             <input type="hidden" name="method" value="punch">
             <input type="hidden" name="location" value="">
             <div class="form-group">
-                <label>备注</label>
                 <input type="text" name="remake" class="form-control" placeholder="Enter your remake">
             </div>
             <div class="form-group">

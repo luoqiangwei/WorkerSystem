@@ -11,7 +11,7 @@
 <head>
     <title>奇点工作室 - 消息</title>
     <jsp:include page="templete/setting.html"></jsp:include>
-    <meta http-equiv="refresh" content="10; URL=/index.jsp">
+    <meta http-equiv="refresh" content="4; URL=/index.jsp">
 </head>
 <body>
 <jsp:include page="templete/top.jsp"></jsp:include>
