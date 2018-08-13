@@ -12,7 +12,7 @@
     <title>个人中心</title>
     <jsp:include page="/jsp/templete/setting.html"></jsp:include>
     <link rel="stylesheet" href="/css/common/person/mcenter.css">
-    <script type="text/javascript" src="/js/common/Mcenter.js"></script>
+    <script type="text/javascript" src="/js/common/person/Mcenter.js"></script>
 </head>
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
