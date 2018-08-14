@@ -8,11 +8,13 @@ import cn.ovea.tool.commons.RSA;
 import cn.ovea.tool.commons.exception.NanoflakeException;
 import cn.ovea.tool.commons.exception.RSAException;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 public class LearningRecordsService {
@@ -56,5 +58,17 @@ public class LearningRecordsService {
             mlr.setRemarks(rsa.enCoding(mlr.getRemarks()));
         }
         MLRD.add(mlr);
+    }
+
+    public void findByUser(HttpServletRequest req, String userID){
+        List<Member_learning_records> userLrc = MLRD.findByUid(userID);
+        for(Member_learning_records tmp : userLrc){
+            tmp.setTitle(rsa.deCoding(tmp.getTitle()));
+            tmp.setContent(rsa.deCoding(tmp.getContent()));
+            if(!tmp.getRemarks().equals("")){
+                tmp.setRemarks(rsa.deCoding(tmp.getRemarks()));
+            }
+        }
+        req.setAttribute("userLrc", userLrc);
     }
 }

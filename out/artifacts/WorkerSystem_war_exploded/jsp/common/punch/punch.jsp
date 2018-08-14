@@ -30,14 +30,14 @@
                 <input type="submit" id="sub" class="btn btn-light" value="打卡" disabled="disabled">
             </div>
         </form>
-    </div>
+    </div><br>
     <c:forEach items="${userPtc}" var="item">
         <div class="form-control">
-            <label>打卡IP:<p>${item.punch_ip}</p></label><br>
-            <label>打卡地点:<p>${item.punch_location}</p></label><br>
-            <label>打卡备注:<p>${item.remarks}</p></label><br>
-            <label>打卡日期:<p>${item.punch_date}</p></label>
-        </div>
+            <label>打卡IP:${item.punch_ip}</label><br>
+            <label>打卡地点:${item.punch_location}</label><br>
+            <label>打卡备注:${item.remarks}</label><br>
+            <label>打卡日期:${item.punch_date}</label>
+        </div><br>
     </c:forEach>
 </div>
 <jsp:include page="/jsp/templete/foot.html"></jsp:include>

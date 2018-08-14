@@ -13,7 +13,7 @@ public class Member_learning_recordsDao {
     private QueryRunner qr = new TxQueryRunner();
 
     public List<Member_learning_records> findAll(){
-        String sql = "select * from member_learning_records where is_effective=1";
+        String sql = "select * from member_learning_records where is_effective=1 order by record_id desc";
         try {
             return qr.query(sql, new BeanListHandler<Member_learning_records>(Member_learning_records.class));
         } catch (SQLException e) {
@@ -22,7 +22,7 @@ public class Member_learning_recordsDao {
     }
 
     public Member_learning_records findByRid(String  rid){
-        String sql = "select * from member_learning_records where is_effective=1 and record_id=?";
+        String sql = "select * from member_learning_records where is_effective=1 and record_id=? order by record_id desc";
         try {
             return qr.query(sql, new BeanHandler<Member_learning_records>(Member_learning_records.class), rid);
         } catch (SQLException e) {
@@ -31,7 +31,7 @@ public class Member_learning_recordsDao {
     }
 
     public List<Member_learning_records> findByUid(String uid){
-        String sql = "select * from member_learning_records where is_effective=1 and user_id=?";
+        String sql = "select * from member_learning_records where is_effective=1 and user_id=? order by record_id desc";
         try {
             return qr.query(sql, new BeanListHandler<Member_learning_records>(Member_learning_records.class), uid);
         } catch (SQLException e) {

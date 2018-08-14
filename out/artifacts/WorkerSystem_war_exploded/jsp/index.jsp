@@ -24,7 +24,7 @@
                     <a href="/Punch?method=findByUser"><button class="btn btn-light long">打卡</button></a>
                 </div>
                 <div class="form-group">
-                    <a href="/jsp/common/record/learningRecords.jsp"><button class="btn btn-light long">编写日志</button></a>
+                    <a href="/LearningRecords?method=findByUser"><button class="btn btn-light long">编写日志</button></a>
                 </div>
             </c:if>
         </div>

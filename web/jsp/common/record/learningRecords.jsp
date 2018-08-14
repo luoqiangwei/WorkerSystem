@@ -33,7 +33,14 @@
                 <input type="submit" class="form-control btn btn-primary" value="提交">
             </div>
         </form>
-    </div>
+    </div><br>
+    <c:forEach items="${userLrc}" var="item">
+    <div class="form-control">
+        <h3>${item.title}</h3><time>${item.release_date}</time><br>
+        <h6>${item.remarks}</h6><br>
+        <p>${item.content}</p>
+    </div><br>
+    </c:forEach>
 </div>
 <jsp:include page="/jsp/templete/foot.html"></jsp:include>
 </body>

@@ -41,6 +41,17 @@ public class LearningRecordsServlet extends BaseServlet {
         }
 
         req.setAttribute("msg", "学习记录添加成功");
-        return "f:/jsp/msg.jsp";
+        return "f:/LearningRecords?method=findByUser";
+    }
+
+    public String findByUser(HttpServletRequest req, HttpServletResponse resp){
+        if(req.getSession().getAttribute("userInfo") instanceof Teacher_information){
+            Teacher_information ti = (Teacher_information) req.getSession().getAttribute("userInfo");
+            LRS.findByUser(req, ti.getUser_id());
+        }else{
+            Member_information mi = (Member_information) req.getSession().getAttribute("userInfo");
+            LRS.findByUser(req, mi.getUser_id());
+        }
+        return "f:/jsp/common/record/learningRecords.jsp";
     }
 }
