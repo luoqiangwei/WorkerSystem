@@ -56,17 +56,17 @@ public class TeacherManageService {
         List<Teacher_information> teaList = TID.findAll();
         for(Teacher_information tmp : teaList){
             tmp.setStaff_id(rsa.deCoding(tmp.getStaff_id()));
-            if(!tmp.getName().equals("")){
+            if(tmp.getName() != null && !tmp.getName().equals("")){
                 tmp.setName(rsa.deCoding(tmp.getName()));
             }
             tmp.setEmail(rsa.deCoding(tmp.getEmail()));
-            if(!tmp.getPhone_number().equals("")){
+            if(tmp.getPhone_number() != null && !tmp.getPhone_number().equals("")){
                 tmp.setPhone_number(rsa.deCoding(tmp.getPhone_number()));
             }
-            if(!tmp.getQq().equals("")){
-                tmp.setQq(rsa.deCoding(rsa.deCoding(tmp.getQq())));
+            if(tmp.getQq() != null && !tmp.getQq().equals("")){
+                tmp.setQq(rsa.deCoding(tmp.getQq()));
             }
-            if(!tmp.getHead_image_uri().equals("")){
+            if(tmp.getHead_image_uri() != null && !tmp.getHead_image_uri().equals("")){
                 tmp.setHead_image_uri(rsa.deCoding(tmp.getHead_image_uri()));
             }
         }

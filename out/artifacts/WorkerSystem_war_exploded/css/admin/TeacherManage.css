@@ -13,19 +13,23 @@
 
 .sect{
     float: left;
-    width: 20%;
+    width: 15%;
 }
 
 .show{
     float: right;
-    width: 80%;
+    width: 82%;
 }
 
 .add{
+    float: right;
+    width: 82%;
     display: none;
 }
 
 .modify{
+    float: right;
+    width: 82%;
     display: none;
 }
 

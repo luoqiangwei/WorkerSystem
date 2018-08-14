@@ -14,4 +14,10 @@ public class TeacherManageServlet extends BaseServlet {
         TMS.findAll(req);
         return "f:/jsp/admin/TeacherManage.jsp";
     }
+
+    public String updateItem(HttpServletRequest req, HttpServletResponse resp){
+//        System.out.println(req.getParameter("sid"));
+
+        return "f:/TeacherManage?method=findAll";
+    }
 }
