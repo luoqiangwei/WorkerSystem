@@ -11,6 +11,7 @@
 <head>
     <title>奇点工作室</title>
     <jsp:include page="templete/setting.html"></jsp:include>
+    <link rel="stylesheet" href="/css/index.css">
     <meta http-equiv="keywords" content="奇点,工作室,江西农业大学">
     <meta http-equiv="description" content="奇点工作室的首页">
 </head>
@@ -18,12 +19,14 @@
 <jsp:include page="templete/top.jsp"></jsp:include>
     <div class="center">
         <div class="menu">
-            <ul>
-                <c:if test="${userInfo != null}">
-                    <li><a href="/jsp/common/punch/punch.jsp">打卡</a></li>
-                    <li><a href="/jsp/common/record/learningRecords.jsp">编写日志</a></li>
-                </c:if>
-            </ul>
+            <c:if test="${userInfo != null}">
+                <div class="form-group">
+                    <a href="/Punch?method=findByUser"><button class="btn btn-light long">打卡</button></a>
+                </div>
+                <div class="form-group">
+                    <a href="/jsp/common/record/learningRecords.jsp"><button class="btn btn-light long">编写日志</button></a>
+                </div>
+            </c:if>
         </div>
     </div>
 <jsp:include page="templete/foot.html"></jsp:include>

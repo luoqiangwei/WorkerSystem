@@ -24,7 +24,7 @@ public class Nanoflake {
     @Test
     public void fun1(){
         for (int i = 0; i < 100; i++)
-            //System.out.println(Long.toHexString(getNanoflake(1)));
-            System.out.println(getNanoflake(1));
+            System.out.println(Long.toHexString(getNanoflake(1)));
+            //System.out.println(getNanoflake(1));
     }
 }

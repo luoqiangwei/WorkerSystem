@@ -12,7 +12,7 @@ public class Punch_the_clockDao {
     private QueryRunner qr = new TxQueryRunner();
 
     public List<Punch_the_clock> findAll(){
-        String sql = "select * from punch_the_clock";
+        String sql = "select * from punch_the_clock order by punch_id desc";
         try {
             return qr.query(sql, new BeanListHandler<Punch_the_clock>(Punch_the_clock.class));
         } catch (SQLException e) {
@@ -21,7 +21,7 @@ public class Punch_the_clockDao {
     }
 
     public List<Punch_the_clock> findByUid(String uid){
-        String sql = "select * from punch_the_clock where user_id=?";
+        String sql = "select * from punch_the_clock where user_id=? order by punch_id desc";
         try {
             return qr.query(sql, new BeanListHandler<Punch_the_clock>(Punch_the_clock.class), uid);
         } catch (SQLException e) {

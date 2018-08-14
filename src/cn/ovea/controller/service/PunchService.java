@@ -7,11 +7,13 @@ import cn.ovea.tool.commons.RSA;
 import cn.ovea.tool.commons.exception.NanoflakeException;
 import cn.ovea.tool.commons.exception.RSAException;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 public class PunchService {
@@ -59,5 +61,21 @@ public class PunchService {
         }
         ptc.setType(true);
         PTCD.add(ptc);
+    }
+
+    public void findByUser(HttpServletRequest req, String userID){
+        List<Punch_the_clock> userPtc = PTCD.findByUid(userID);
+        for(Punch_the_clock temp : userPtc){
+            if(!temp.getRemarks().equals("")){
+                temp.setRemarks(rsa.deCoding(temp.getRemarks()));
+            }
+            if(!temp.getPunch_ip().equals("")){
+                temp.setPunch_ip(rsa.deCoding(temp.getPunch_ip()));
+            }
+            if(!temp.getPunch_location().equals("")){
+                temp.setPunch_location(rsa.deCoding(temp.getPunch_location()));
+            }
+        }
+        req.setAttribute("userPtc", userPtc);
     }
 }

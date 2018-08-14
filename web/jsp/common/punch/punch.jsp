@@ -31,6 +31,14 @@
             </div>
         </form>
     </div>
+    <c:forEach items="${userPtc}" var="item">
+        <div class="form-control">
+            <label>打卡IP:<p>${item.punch_ip}</p></label><br>
+            <label>打卡地点:<p>${item.punch_location}</p></label><br>
+            <label>打卡备注:<p>${item.remarks}</p></label><br>
+            <label>打卡日期:<p>${item.punch_date}</p></label>
+        </div>
+    </c:forEach>
 </div>
 <jsp:include page="/jsp/templete/foot.html"></jsp:include>
 </body>

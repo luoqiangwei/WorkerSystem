@@ -35,6 +35,17 @@ public class PunchServlet extends BaseServlet {
             PS.insertPunch(ptc);
         }
         req.setAttribute("msg", "打卡成功");
-        return "/jsp/msg.jsp";
+        return "/Punch?method=findByUser";
+    }
+
+    public String findByUser(HttpServletRequest req, HttpServletResponse resp){
+        if(req.getSession().getAttribute("userInfo") instanceof Teacher_information){
+            Teacher_information ti = (Teacher_information) req.getSession().getAttribute("userInfo");
+            PS.findByUser(req, ti.getUser_id());
+        }else{
+            Member_information mi = (Member_information) req.getSession().getAttribute("userInfo");
+            PS.findByUser(req, mi.getUser_id());
+        }
+        return "f:/jsp/common/punch/punch.jsp";
     }
 }
