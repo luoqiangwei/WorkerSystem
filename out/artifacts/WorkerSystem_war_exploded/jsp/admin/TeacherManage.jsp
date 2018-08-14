@@ -16,15 +16,23 @@
 <body>
 <jsp:include page="/jsp/templete/top.jsp"></jsp:include>
 <div class="center">
-    <div class="TMTitle"><h2>教师信息管理</h2></div>
+    <div class="TMTitle"><h2>教师信息管理</h2></div><br>
     <div class="sect">
-        <ul>
-            <li><a href="/TeacherManage?method=findAll">查询所有</a></li>
-            <li><a href="">添加</a></li>
-            <li><a href="">修改</a></li>
-            <li><a href="/TeacherManage?method=remove">删除</a></li>
-            <li><a href="">查询</a></li>
-        </ul>
+        <div class="form-group">
+            <a href="/TeacherManage?method=findAll"><button class="btn btn-light form-control">查询所有</button></a>
+        </div>
+        <div class="form-group">
+            <a href=""><button class="btn btn-light form-control">添加</button></a>
+        </div>
+        <%--<div class="form-group">--%>
+            <%--<a href=""><button class="btn btn-light form-control">修改</button></a>--%>
+        <%--</div>--%>
+        <%--<div class="form-group">--%>
+            <%--<a href="/TeacherManage?method=remove"><button class="btn btn-light form-control">删除</button></a>--%>
+        <%--</div>--%>
+        <div class="form-group">
+            <a href=""><button class="btn btn-light form-control">查询</button></a>
+        </div>
     </div>
     <div class="show">
 

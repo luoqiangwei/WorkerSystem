@@ -15,13 +15,23 @@
 <body>
 <jsp:include page="../templete/top.jsp"></jsp:include>
 <div class="center">
-    <ul>
-        <li><a href="TeacherManage.jsp">教师管理</a></li>
-        <li><a href="MemberManage.jsp">成员管理</a></li>
-        <li><a href="BulletinManage.jsp">公告管理</a></li>
-        <li><a href="PunchManage.jsp">打卡管理</a></li>
-        <li><a href="MissionManage.jsp">任务管理</a></li>
-    </ul>
+    <div class="form-group">
+        <div class="form-group">
+            <a href="TeacherManage.jsp"><button class="btn btn-light form-control">教师管理</button></a>
+        </div>
+        <div class="form-group">
+            <a href="MemberManage.jsp"><button class="btn btn-light form-control">成员管理</button></a>
+        </div>
+        <div class="form-group">
+            <a href="BulletinManage.jsp"><button class="btn btn-light form-control">公告管理</button></a>
+        </div>
+        <div class="form-group">
+            <a href="PunchManage.jsp"><button class="btn btn-light form-control">打卡管理</button></a>
+        </div>
+        <div class="form-group">
+            <a href="MissionManage.jsp"><button class="btn btn-light form-control">任务管理</button></a>
+        </div>
+    </div>
 </div>
 <jsp:include page="../templete/foot.html"></jsp:include>
 </body>

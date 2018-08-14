@@ -22,7 +22,7 @@ public class Member_learning_recordsDao {
     }
 
     public Member_learning_records findByRid(String  rid){
-        String sql = "select * from member_learning_records where is_effective=1 and record_id=? order by record_id desc";
+        String sql = "select * from member_learning_records where is_effective=1 and record_id=?";
         try {
             return qr.query(sql, new BeanHandler<Member_learning_records>(Member_learning_records.class), rid);
         } catch (SQLException e) {
@@ -53,6 +53,15 @@ public class Member_learning_recordsDao {
         String sql = "update member_learning_records set is_effective=? where record_id=?";
         try {
             qr.update(sql, state, rid);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void updateRecord(Member_learning_records mlr) {
+        String sql = "update member_learning_records set title=?, content=?, remarks=? where record_id=?";
+        try {
+            qr.update(sql, mlr.getTitle(), mlr.getContent(), mlr.getRemarks(), mlr.getRecord_id());
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

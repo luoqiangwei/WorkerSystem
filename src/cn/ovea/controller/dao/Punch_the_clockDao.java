@@ -29,6 +29,22 @@ public class Punch_the_clockDao {
         }
     }
 
+    /**
+     *
+     * @param uid
+     * @param point
+     * @param size
+     * @return
+     */
+    public List<Punch_the_clock> findByUidLimt(String uid, int point, int size){
+        String sql = "select * from punch_the_clock where user_id=? order by punch_id desc Limit ?, ?";
+        try {
+            return qr.query(sql, new BeanListHandler<Punch_the_clock>(Punch_the_clock.class), uid, point, size);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public void add(Punch_the_clock punch_the_clock){
         String sql = "insert into punch_the_clock values(?,?,?,?,?,?,?)";
         Object[] params = {punch_the_clock.getPunch_id(), punch_the_clock.getUser_id(), punch_the_clock.getPunch_date(), punch_the_clock.getPunch_location(), punch_the_clock.getPunch_ip(), punch_the_clock.getRemarks(), punch_the_clock.isType()};

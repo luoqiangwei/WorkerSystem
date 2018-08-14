@@ -71,4 +71,23 @@ public class LearningRecordsService {
         }
         req.setAttribute("userLrc", userLrc);
     }
+
+    public void findByRid(HttpServletRequest req, String rid) {
+        Member_learning_records editRecord = MLRD.findByRid(rid);
+        editRecord.setTitle(rsa.deCoding(editRecord.getTitle()));
+        editRecord.setContent(rsa.deCoding(editRecord.getContent()));
+        if(!editRecord.getRemarks().equals("")){
+            editRecord.setRemarks(rsa.deCoding(editRecord.getRemarks()));
+        }
+        req.setAttribute("editRecord", editRecord);
+    }
+
+    public void updateRecord(Member_learning_records mlr) {
+        mlr.setContent(rsa.enCoding(mlr.getContent()));
+        mlr.setTitle(rsa.enCoding(mlr.getTitle()));
+        if(!mlr.getRemarks().trim().equals("")){
+            mlr.setRemarks(rsa.enCoding(mlr.getRemarks()));
+        }
+        MLRD.updateRecord(mlr);
+    }
 }

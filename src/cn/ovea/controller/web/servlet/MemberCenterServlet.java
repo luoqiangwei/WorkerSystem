@@ -47,7 +47,9 @@ public class MemberCenterServlet extends BaseServlet {
         }
         MCS.baseSet(userInfo);
 
-        return "f:/Center";
+        req.setAttribute("msg", "修改成功。");
+        req.setAttribute("toUrl", "/Center");
+        return "f:/jsp/msg.jsp";
     }
 
     public String passwdChange(HttpServletRequest req, HttpServletResponse resp){
@@ -94,6 +96,8 @@ public class MemberCenterServlet extends BaseServlet {
         if(req.getAttribute("MCType") != null){
             req.removeAttribute("MCType");
         }
-        return "f:/Center";
+        req.setAttribute("msg", "修改成功。");
+        req.setAttribute("toUrl", "/Center");
+        return "f:/jsp/msg.jsp";
     }
 }

@@ -35,10 +35,14 @@
         </form>
     </div><br>
     <c:forEach items="${userLrc}" var="item">
-    <div class="form-control">
-        <h3>${item.title}</h3><time>${item.release_date}</time><br>
-        <h6>${item.remarks}</h6><br>
-        <p>${item.content}</p>
+    <div class="form-group">
+        <a href="/LearningRecords?method=edit&rid=${item.record_id}">
+            <button class="btn btn-light form-control">
+                <h3>${item.title}</h3><time>${item.release_date}</time><br>
+                <%--<h6>${item.remarks}</h6><br>--%>
+                <%--<p>${item.content}</p>--%>
+            </button>
+        </a>
     </div><br>
     </c:forEach>
 </div>

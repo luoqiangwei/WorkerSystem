@@ -40,7 +40,7 @@ public class LearningRecordsServlet extends BaseServlet {
             LRS.insertRecord(mlr);
         }
 
-        req.setAttribute("msg", "学习记录添加成功");
+//        req.setAttribute("msg", "学习记录添加成功");
         return "f:/LearningRecords?method=findByUser";
     }
 
@@ -53,5 +53,30 @@ public class LearningRecordsServlet extends BaseServlet {
             LRS.findByUser(req, mi.getUser_id());
         }
         return "f:/jsp/common/record/learningRecords.jsp";
+    }
+
+    public String edit(HttpServletRequest req, HttpServletResponse resp){
+        String rid = req.getParameter("rid");
+        LRS.findByRid(req, rid);
+        return "f:/jsp/common/record/edit.jsp";
+    }
+
+    public String update(HttpServletRequest req, HttpServletResponse resp){
+        String title = req.getParameter("title");
+        String remake = req.getParameter("remake");
+        String content = req.getParameter("content");
+        String rid = req.getParameter("rid");
+        if(title.trim().equals("") || content.trim().equals("")){
+            req.setAttribute("form", "未填写标题或内容。");
+            return "f:/jsp/common/record/edit.jsp";
+        }
+        Member_learning_records mlr = new Member_learning_records();
+        mlr.setRecord_id(rid);
+        mlr.setTitle(title);
+        mlr.setContent(content);
+        mlr.setRemarks(remake);
+        LRS.updateRecord(mlr);
+
+        return "f:/LearningRecords?method=findByUser";
     }
 }

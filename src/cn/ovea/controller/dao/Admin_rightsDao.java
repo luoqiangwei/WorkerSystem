@@ -24,7 +24,7 @@ public class Admin_rightsDao {
     public Admin_rights findByUser_id(String user_id){
         String sql = "select * from admin_rights where user_id = ? and is_effective=1";
         try {
-            return qr.query(sql, new BeanHandler<Admin_rights>(Admin_rights.class));
+            return qr.query(sql, new BeanHandler<Admin_rights>(Admin_rights.class), user_id);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

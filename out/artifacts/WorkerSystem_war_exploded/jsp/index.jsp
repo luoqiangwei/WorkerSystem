@@ -20,6 +20,11 @@
     <div class="center">
         <div class="menu">
             <c:if test="${userInfo != null}">
+                <c:if test="${isAdmin != null}">
+                    <div class="form-group">
+                        <a href="/jsp/admin/index.jsp"><button class="btn btn-light long">管理页面</button></a>
+                    </div>
+                </c:if>
                 <div class="form-group">
                     <a href="/Punch?method=findByUser"><button class="btn btn-light long">打卡</button></a>
                 </div>

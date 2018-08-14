@@ -49,7 +49,9 @@ public class TeacherCenterServlet extends BaseServlet {
         }
         TCS.baseSet(userInfo);
 
-        return "f:/Center";
+        req.setAttribute("msg", "修改成功。");
+        req.setAttribute("toUrl", "/Center");
+        return "f:/jsp/msg.jsp";
     }
 
     public String passwdChange(HttpServletRequest req, HttpServletResponse resp){
@@ -96,6 +98,9 @@ public class TeacherCenterServlet extends BaseServlet {
         if(req.getAttribute("TCType") != null){
             req.removeAttribute("TCType");
         }
-        return "f:/Center";
+
+        req.setAttribute("msg", "修改成功。");
+        req.setAttribute("toUrl", "/Center");
+        return "f:/jsp/msg.jsp";
     }
 }

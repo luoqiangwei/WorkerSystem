@@ -24,7 +24,7 @@ var getWebLocation = function () {
 var getSuccess = function (position) {
     var sub = document.getElementById("sub");
     var location = document.getElementsByName("location")[0];
-    location.value = position.coords.latitude + "," + position.coords.longitude + "," + position.coords.altitude;
+    location.value = position.coords.longitude + "," + position.coords.latitude + "," + position.coords.altitude;
     sub.removeAttribute("disabled");
 };
 

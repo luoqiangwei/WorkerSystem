@@ -1,8 +1,10 @@
 package cn.ovea.controller.service;
 
+import cn.ovea.controller.dao.Admin_rightsDao;
 import cn.ovea.controller.dao.Member_informationDao;
 import cn.ovea.controller.dao.Teacher_informationDao;
 import cn.ovea.controller.dao.User_informationDao;
+import cn.ovea.model.Admin_rights;
 import cn.ovea.model.Member_information;
 import cn.ovea.model.Teacher_information;
 import cn.ovea.model.User_information;
@@ -23,6 +25,7 @@ public class LoginService {
     Member_informationDao MID = new Member_informationDao();
     Teacher_informationDao TID = new Teacher_informationDao();
     User_informationDao UID = new User_informationDao();
+    Admin_rightsDao ARD = new Admin_rightsDao();
     SHA sha;
 
     public LoginService(){
@@ -71,6 +74,10 @@ public class LoginService {
             if(mi.getHead_image_uri() != null && !"".equals(mi.getHead_image_uri().trim()))
                 mi.setHead_image_uri(rsa.deCoding(mi.getHead_image_uri()));
             req.getSession().setAttribute("userInfo", mi);
+            req.getSession().setAttribute("isTea", true);
+            if(ARD.findByUser_id(mi.getUser_id()) != null){
+                req.getSession().setAttribute("isAdmin", true);
+            }
         }
         if(ti != null){
             ti.setStaff_id(rsa.deCoding(ti.getStaff_id()));
@@ -84,6 +91,9 @@ public class LoginService {
             if(ti.getHead_image_uri() != null && !"".equals(ti.getHead_image_uri().trim()))
                 ti.setHead_image_uri(rsa.deCoding(ti.getHead_image_uri()));
             req.getSession().setAttribute("userInfo", ti);
+            if(ARD.findByUser_id(ti.getUser_id()) != null){
+                req.getSession().setAttribute("isAdmin", true);
+            }
         }
         if(req.getSession().getAttribute("count") != null){
             req.getSession().removeAttribute("count");

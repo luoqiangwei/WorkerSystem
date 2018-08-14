@@ -64,7 +64,7 @@ public class PunchService {
     }
 
     public void findByUser(HttpServletRequest req, String userID){
-        List<Punch_the_clock> userPtc = PTCD.findByUid(userID);
+        List<Punch_the_clock> userPtc = PTCD.findByUidLimt(userID, 0, 5);
         for(Punch_the_clock temp : userPtc){
             if(!temp.getRemarks().equals("")){
                 temp.setRemarks(rsa.deCoding(temp.getRemarks()));
