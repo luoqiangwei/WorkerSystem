@@ -76,6 +76,7 @@
             <tr>
                 <form action="/TeacherManage" method="post">
                     <input type="hidden" name="method" value="updateItem">
+                    <input type="hidden" name="id" value="${item.user_id}">
                     <td><input type="text" name="sid" class="form-control" value="${item.staff_id}"></td>
                     <%--<td><input type="text" name="name" class="form-control" value="${item.name}"></td>--%>
                     <td><input type="email" name="email" class="form-control" value="${item.email}" placeholder="Enter email"></td>
@@ -92,7 +93,7 @@
                     </select></td>
                     <td><input type="submit" class="btn btn-danger" value="修改"></td>
                 </form>
-                <td><button class="form-control btn btn-primary" onclick="showFullModify('${item.staff_id}', '${item.name}', '${item.email}', '${item.phone_number}', '${item.qq}', '${item.sex}', '${item.is_effective}')">完整修改</button></td>
+                <td><button class="form-control btn btn-primary" onclick="showFullModify('${item.user_id}', '${item.staff_id}', '${item.name}', '${item.email}', '${item.phone_number}', '${item.qq}', '${item.sex}', '${item.is_effective}')">完整修改</button></td>
             </tr>
         </c:forEach>
         </table>
@@ -146,6 +147,7 @@
     <div class="modify">
         <form class="form-control" method="post">
             <input type="hidden" name="method" value="fullModify">
+            <input type="hidden" name="id" id="id">
             <div class="form-group">
                 <label style="color: purple;">教工号</label>
                 <input type="text" class="form-control" name="sid" placeholder="Enter staff id" id="sid">

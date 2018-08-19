@@ -14,9 +14,11 @@ var showFullAdd = function () {
     add.style.display = "block";
 }
 
-var showFullModify = function (sid, name, email, phone, qq, sex, isEff) {
+var showFullModify = function (user_id, sid, name, email, phone, qq, sex, isEff) {
     var show = document.getElementsByClassName("show")[0];
     var modify = document.getElementsByClassName("modify")[0];
+    var idInput = document.getElementById("id");
+    idInput.value = user_id;
     var sidInput = document.getElementById("sid");
     sidInput.value = sid;
     var nameInput = document.getElementById("name");

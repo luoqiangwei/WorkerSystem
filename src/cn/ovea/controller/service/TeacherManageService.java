@@ -72,4 +72,12 @@ public class TeacherManageService {
         }
         req.setAttribute("teaList", teaList);
     }
+
+    public void updateItem(Teacher_information ti){
+        ti.setStaff_id(rsa.enCoding(ti.getStaff_id()));
+        ti.setEmail(rsa.enCoding(ti.getEmail()));
+        if(ti.getPassword().trim().length() != 0)
+            ti.setPassword(sha.SHA512Encoding(ti.getPassword()));
+        TID.updateItem(ti);
+    }
 }

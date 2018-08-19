@@ -67,4 +67,22 @@ public class Teacher_informationDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void updateItem(Teacher_information ti){
+        if(ti.getPassword().trim().length() != 0){
+            String sql = "update teacher_information set password=?, staff_id=?, email=?, is_effective=? where user_id=?";
+            try {
+                qr.update(sql, ti.getPassword(), ti.getStaff_id(), ti.getEmail(), ti.isIs_effective(), ti.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            String sql = "update teacher_information set staff_id=?, email=?, is_effective=? where user_id=?";
+            try {
+                qr.update(sql, ti.getStaff_id(), ti.getEmail(), ti.isIs_effective(), ti.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }

@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c11ef8-bd9a-4513-9263-c79737d9554c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/admin/TeacherManage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/admin/TeacherManage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/admin/TeacherManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/admin/TeacherManage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,11 +26,25 @@
       <FILTER>cn.ovea.test.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2130538418">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -39,16 +55,18 @@
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.37" value="2" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +74,7 @@
           <entry key="class" value="2" />
           <entry key="css" value="58" />
           <entry key="html" value="12" />
-          <entry key="java" value="231" />
+          <entry key="java" value="233" />
           <entry key="js" value="26" />
           <entry key="jsp" value="132" />
           <entry key="properties" value="8" />
@@ -68,7 +86,7 @@
           <entry key="CLASS" value="2" />
           <entry key="CSS" value="58" />
           <entry key="HTML" value="12" />
-          <entry key="JAVA" value="231" />
+          <entry key="JAVA" value="233" />
           <entry key="JSP" value="132" />
           <entry key="JavaScript" value="26" />
           <entry key="Properties" value="8" />
@@ -80,9 +98,9 @@
           <entry key="css" value="1007" />
           <entry key="dummy" value="7" />
           <entry key="html" value="19" />
-          <entry key="java" value="10978" />
-          <entry key="js" value="3265" />
-          <entry key="jsp" value="7504" />
+          <entry key="java" value="11764" />
+          <entry key="js" value="3312" />
+          <entry key="jsp" value="7566" />
           <entry key="properties" value="18" />
           <entry key="xml" value="47" />
         </counts>
@@ -91,9 +109,9 @@
         <counts>
           <entry key="CSS" value="1007" />
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="10978" />
-          <entry key="JSP" value="7504" />
-          <entry key="JavaScript" value="3265" />
+          <entry key="JAVA" value="11764" />
+          <entry key="JSP" value="7566" />
+          <entry key="JavaScript" value="3312" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="18" />
           <entry key="XML" value="47" />
@@ -103,11 +121,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="115" column="36" lean-forward="true" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+            <state relative-caret-position="353">
+              <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,36 +152,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="183" column="36" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/admin/TeacherManage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="201">
+              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -189,7 +199,6 @@
         <option value="$PROJECT_DIR$/web/js/base.js" />
         <option value="$PROJECT_DIR$/web/js/common/Tcenter.js" />
         <option value="$PROJECT_DIR$/web/css/common/person/center.css" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" />
         <option value="$PROJECT_DIR$/web/css/common/person/mcenter.css" />
         <option value="$PROJECT_DIR$/web/js/common/Mcenter.js" />
         <option value="$PROJECT_DIR$/web/jsp/common/person/Mcenter.jsp" />
@@ -228,11 +237,12 @@
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/LearningRecordsService.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/dao/Member_learning_recordsDao.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/LearningRecordsServlet.java" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" />
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" />
         <option value="$PROJECT_DIR$/web/css/admin/TeacherManage.css" />
-        <option value="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" />
         <option value="$PROJECT_DIR$/web/js/admin/TeacherManage.js" />
+        <option value="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" />
+        <option value="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" />
       </list>
     </option>
   </component>
@@ -261,9 +271,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="793" />
-    <option name="y" value="114" />
-    <option name="width" value="1125" />
+    <option name="x" value="710" />
+    <option name="y" value="175" />
+    <option name="width" value="1233" />
     <option name="height" value="884" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -274,8 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,6 +382,13 @@
               <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,16 +437,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534261340978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534261356580" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -728,7 +746,11 @@
       <workItem from="1534174740079" duration="322000" />
       <workItem from="1534207338259" duration="11258000" />
       <workItem from="1534230206751" duration="5962000" />
-      <workItem from="1534243087549" duration="10069000" />
+      <workItem from="1534243087549" duration="10263000" />
+      <workItem from="1534292369571" duration="733000" />
+      <workItem from="1534466490005" duration="598000" />
+      <workItem from="1534552961379" duration="1721000" />
+      <workItem from="1534636641618" duration="6337000" />
     </task>
     <servers />
   </component>
@@ -765,7 +787,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250064000" />
+    <option name="totallyTimeSpent" value="259647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,9 +800,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -790,7 +811,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49867842" visible="true" weight="0.25649014" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49867842" weight="0.25649014" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27661794" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -807,7 +828,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32992327" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32966024" />
@@ -831,24 +852,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/common/record/learningRecodes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/filter/CenterFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1074,9 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,42 +1143,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/admin/TeacherManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+        <state relative-caret-position="353">
+          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="201">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="183" column="36" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/admin/TeacherManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="273">
+          <caret line="115" column="36" lean-forward="true" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
         </state>
       </provider>
     </entry>
