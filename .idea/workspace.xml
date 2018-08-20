@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/admin/TeacherManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/admin/TeacherManage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,14 +57,14 @@
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -98,9 +96,9 @@
           <entry key="css" value="1007" />
           <entry key="dummy" value="7" />
           <entry key="html" value="19" />
-          <entry key="java" value="11764" />
+          <entry key="java" value="12700" />
           <entry key="js" value="3312" />
-          <entry key="jsp" value="7566" />
+          <entry key="jsp" value="7567" />
           <entry key="properties" value="18" />
           <entry key="xml" value="47" />
         </counts>
@@ -109,8 +107,8 @@
         <counts>
           <entry key="CSS" value="1007" />
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="11764" />
-          <entry key="JSP" value="7566" />
+          <entry key="JAVA" value="12700" />
+          <entry key="JSP" value="7567" />
           <entry key="JavaScript" value="3312" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="18" />
@@ -121,20 +119,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="115" column="36" lean-forward="true" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+            <state relative-caret-position="-14">
+              <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+            <state>
+              <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,10 +147,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="575">
+              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -270,9 +274,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="710" />
-    <option name="y" value="175" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="526" />
+    <option name="y" value="106" />
     <option name="width" value="1233" />
     <option name="height" value="884" />
   </component>
@@ -284,8 +288,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -437,7 +442,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -751,6 +755,7 @@
       <workItem from="1534466490005" duration="598000" />
       <workItem from="1534552961379" duration="1721000" />
       <workItem from="1534636641618" duration="6337000" />
+      <workItem from="1534724087722" duration="1990000" />
     </task>
     <servers />
   </component>
@@ -787,7 +792,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259647000" />
+    <option name="totallyTimeSpent" value="261637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,9 +804,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="526" y="106" width="1233" height="884" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2915601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1157,34 +1163,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state relative-caret-position="-14">
+          <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#3;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        <state>
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="500">
+          <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="115" column="36" lean-forward="true" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
+        <state relative-caret-position="575">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
         </state>
       </provider>
     </entry>

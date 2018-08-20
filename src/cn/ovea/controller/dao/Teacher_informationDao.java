@@ -85,4 +85,13 @@ public class Teacher_informationDao {
             }
         }
     }
+
+    public void fullModify(Teacher_information ti){
+        String sql = "update teacher_information set staff_id=?, name=?, email=?, password=?, phone_number=?, qq=?, sex=?, is_effective=? where user_id=?";
+        try {
+            qr.update(sql, ti.getStaff_id(), ti.getName(), ti.getEmail(), ti.getPassword(), ti.getPhone_number(), ti.getQq(), ti.isSex(), ti.isIs_effective(), ti.getUser_id());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

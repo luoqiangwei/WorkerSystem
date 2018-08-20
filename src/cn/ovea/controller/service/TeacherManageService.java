@@ -80,4 +80,37 @@ public class TeacherManageService {
             ti.setPassword(sha.SHA512Encoding(ti.getPassword()));
         TID.updateItem(ti);
     }
+
+    public void fullAdd(Teacher_information ti){
+        ti.setStaff_id(rsa.enCoding(ti.getStaff_id()));
+        ti.setEmail(rsa.enCoding(ti.getEmail()));
+        ti.setPassword(sha.SHA512Encoding(ti.getPassword()));
+        if(!ti.getName().trim().equals("")){
+            ti.setName(rsa.enCoding(ti.getName()));
+        }
+        if(!ti.getPhone_number().trim().equals("")){
+            ti.setPhone_number(rsa.enCoding(ti.getPhone_number()));
+        }
+        if(!ti.getQq().trim().equals("")){
+            ti.setQq(rsa.enCoding(ti.getQq()));
+        }
+        ti.setUser_id(nf.getNanoflake());
+        TID.add(ti);
+    }
+
+    public void fullModify(Teacher_information ti) {
+        ti.setStaff_id(rsa.enCoding(ti.getStaff_id()));
+        ti.setEmail(rsa.enCoding(ti.getEmail()));
+        ti.setPassword(sha.SHA512Encoding(ti.getPassword()));
+        if(!ti.getName().trim().equals("")){
+            ti.setName(rsa.enCoding(ti.getName()));
+        }
+        if(!ti.getPhone_number().trim().equals("")){
+            ti.setPhone_number(rsa.enCoding(ti.getPhone_number()));
+        }
+        if(!ti.getQq().trim().equals("")){
+            ti.setQq(rsa.enCoding(ti.getQq()));
+        }
+        TID.fullModify(ti);
+    }
 }
