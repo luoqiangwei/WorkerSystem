@@ -31,6 +31,9 @@
         <div class="form-group">
             <a href="MissionManage.jsp"><button class="btn btn-light form-control">任务管理</button></a>
         </div>
+        <div class="form-group">
+            <a href="AdminManage.jsp"><button class="btn btn-light form-control">管理员管理</button></a>
+        </div>
     </div>
 </div>
 <jsp:include page="../templete/foot.html"></jsp:include>

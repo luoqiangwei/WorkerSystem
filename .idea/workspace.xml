@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c11ef8-bd9a-4513-9263-c79737d9554c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/admin/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +71,7 @@
           <entry key="html" value="12" />
           <entry key="java" value="233" />
           <entry key="js" value="26" />
-          <entry key="jsp" value="132" />
+          <entry key="jsp" value="135" />
           <entry key="properties" value="8" />
           <entry key="xml" value="10" />
         </counts>
@@ -85,7 +82,7 @@
           <entry key="CSS" value="58" />
           <entry key="HTML" value="12" />
           <entry key="JAVA" value="233" />
-          <entry key="JSP" value="132" />
+          <entry key="JSP" value="135" />
           <entry key="JavaScript" value="26" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="10" />
@@ -98,7 +95,7 @@
           <entry key="html" value="19" />
           <entry key="java" value="12700" />
           <entry key="js" value="3312" />
-          <entry key="jsp" value="7567" />
+          <entry key="jsp" value="7578" />
           <entry key="properties" value="18" />
           <entry key="xml" value="47" />
         </counts>
@@ -108,7 +105,7 @@
           <entry key="CSS" value="1007" />
           <entry key="HTML" value="19" />
           <entry key="JAVA" value="12700" />
-          <entry key="JSP" value="7567" />
+          <entry key="JSP" value="7578" />
           <entry key="JavaScript" value="3312" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="18" />
@@ -122,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
+            <state relative-caret-position="-764">
               <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -137,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+            <state relative-caret-position="2300">
+              <caret line="102" column="49" lean-forward="true" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,20 +143,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jsp/admin/AdminManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+            <state relative-caret-position="425">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+            <state relative-caret-position="3225">
+              <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -170,8 +167,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -196,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/CenterServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/test/RSA8192.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/tool/commons/RSA.java" />
         <option value="$PROJECT_DIR$/web/js/common/tcenter.js" />
@@ -227,7 +223,6 @@
         <option value="$PROJECT_DIR$/web/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/dao/Admin_rightsDao.java" />
         <option value="$PROJECT_DIR$/web/jsp/Teacher.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/admin/index.jsp" />
         <option value="$PROJECT_DIR$/web/js/common/punch/punch.js" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/filter/AdminFilter.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/PunchService.java" />
@@ -247,6 +242,8 @@
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java" />
         <option value="$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java" />
+        <option value="$PROJECT_DIR$/web/jsp/admin/index.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/admin/AdminManage.jsp" />
       </list>
     </option>
   </component>
@@ -428,14 +425,6 @@
               <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkerSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkerSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -451,7 +440,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534261356580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534729070534" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -755,7 +744,7 @@
       <workItem from="1534466490005" duration="598000" />
       <workItem from="1534552961379" duration="1721000" />
       <workItem from="1534636641618" duration="6337000" />
-      <workItem from="1534724087722" duration="1990000" />
+      <workItem from="1534724087722" duration="3211000" />
     </task>
     <servers />
   </component>
@@ -792,7 +781,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261637000" />
+    <option name="totallyTimeSpent" value="262858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,7 +796,7 @@
     <frame x="526" y="106" width="1233" height="884" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2915601" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2915601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -858,13 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/filter/CenterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/msg.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -986,25 +968,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/admin/BulletinManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/Teacher.jsp" />
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/filter/AdminFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1163,9 +1131,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/admin/TeacherManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
+        <state relative-caret-position="-764">
           <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1176,27 +1151,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/service/TeacherManageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+        <state relative-caret-position="2300">
+          <caret line="102" column="49" lean-forward="true" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/admin/BulletinManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" selection-start-line="15" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/web/servlet/TeacherManageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="3225">
           <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ovea/controller/dao/Teacher_informationDao.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/admin/AdminManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+        <state relative-caret-position="425">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
