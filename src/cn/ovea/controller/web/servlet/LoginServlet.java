@@ -100,7 +100,7 @@ public class LoginServlet extends BaseServlet {
             return "f:/jsp/login.jsp";
         }
 
-        return "/index.jsp";
+        return "f:/Login?method=findAll";
     }
 
     private void reSet(HttpServletRequest req, String email, String password){
@@ -115,5 +115,10 @@ public class LoginServlet extends BaseServlet {
             req.getSession().removeAttribute("userInfo");
         }
         return "/index.jsp";
+    }
+
+    public String findAll(HttpServletRequest req, HttpServletResponse resp){
+        LS.findAllBulletin(req);
+        return "f:/jsp/index.jsp";
     }
 }

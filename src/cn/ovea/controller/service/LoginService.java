@@ -1,13 +1,7 @@
 package cn.ovea.controller.service;
 
-import cn.ovea.controller.dao.Admin_rightsDao;
-import cn.ovea.controller.dao.Member_informationDao;
-import cn.ovea.controller.dao.Teacher_informationDao;
-import cn.ovea.controller.dao.User_informationDao;
-import cn.ovea.model.Admin_rights;
-import cn.ovea.model.Member_information;
-import cn.ovea.model.Teacher_information;
-import cn.ovea.model.User_information;
+import cn.ovea.controller.dao.*;
+import cn.ovea.model.*;
 import cn.ovea.model.exception.User_informationException;
 import cn.ovea.tool.commons.RSA;
 import cn.ovea.tool.commons.SHA;
@@ -18,6 +12,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 public class LoginService {
@@ -26,6 +21,7 @@ public class LoginService {
     Teacher_informationDao TID = new Teacher_informationDao();
     User_informationDao UID = new User_informationDao();
     Admin_rightsDao ARD = new Admin_rightsDao();
+    Bulletin_informationDao BID = new Bulletin_informationDao();
     SHA sha;
 
     public LoginService(){
@@ -74,7 +70,6 @@ public class LoginService {
             if(mi.getHead_image_uri() != null && !"".equals(mi.getHead_image_uri().trim()))
                 mi.setHead_image_uri(rsa.deCoding(mi.getHead_image_uri()));
             req.getSession().setAttribute("userInfo", mi);
-            req.getSession().setAttribute("isTea", true);
             if(ARD.findByUser_id(mi.getUser_id()) != null){
                 req.getSession().setAttribute("isAdmin", true);
             }
@@ -94,6 +89,7 @@ public class LoginService {
             if(ARD.findByUser_id(ti.getUser_id()) != null){
                 req.getSession().setAttribute("isAdmin", true);
             }
+            req.getSession().setAttribute("isTea", true);
         }
         if(req.getSession().getAttribute("count") != null){
             req.getSession().removeAttribute("count");
@@ -101,5 +97,15 @@ public class LoginService {
         if(req.getSession().getAttribute("loginError") != null){
             req.getSession().removeAttribute("loginError");
         }
+    }
+
+    public void findAllBulletin(HttpServletRequest req) {
+        List<Bulletin_information> li = BID.findAll();
+        for(Bulletin_information bi : li){
+            bi.setTitle(rsa.deCoding(bi.getTitle()));
+            bi.setContent(rsa.deCoding(bi.getContent()));
+        }
+        if(li.size() != 0)
+            req.getSession().setAttribute("BulletinInfo", li);
     }
 }

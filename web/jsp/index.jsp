@@ -25,6 +25,11 @@
                         <a href="/jsp/admin/index.jsp"><button class="btn btn-light long">管理页面</button></a>
                     </div>
                 </c:if>
+                <c:if test="${isTea != null}">
+                    <div class="form-group">
+                        <a href="/jsp/teacher/bulletin/bulletin.jsp"><button class="btn btn-light long">公告发布</button></a>
+                    </div>
+                </c:if>
                 <div class="form-group">
                     <a href="/Punch?method=findByUser"><button class="btn btn-light long">打卡</button></a>
                 </div>
@@ -33,6 +38,14 @@
                 </div>
             </c:if>
         </div>
+        <c:if test="${BulletinInfo != null}">
+        <div class="bulletin form-control">
+            <c:forEach var="item" items="${BulletinInfo}">
+                <h3>${item.title}</h3><time>${item.release_time}</time><br><br>
+                <p>${item.content}</p>
+            </c:forEach>
+        </div>
+        </c:if>
     </div>
 <jsp:include page="templete/foot.html"></jsp:include>
 </body>
