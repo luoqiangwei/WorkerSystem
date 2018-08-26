@@ -37,10 +37,10 @@
         <form action="/TeacherManage" method="post">
             <input type="hidden" name="method" value="find">
             <div class="form-group find">
-                <input type="text" class="form-control" name="find" placeholder="Enter key word">
+                <input type="email" class="form-control" name="find" placeholder="Enter key word">
             </div>
             <div class="form-group find">
-                <input type="submit" class="btn btn-primary form-control" value="查询">
+                <input type="submit" class="btn btn-primary form-control" value="邮箱查询">
             </div>
         </form>
     </div>
@@ -61,12 +61,12 @@
             <tr>
                 <form action="/TeacherManage" method="post">
                     <input type="hidden" name="method" value="insertItem">
-                    <td><input type="text" name="sid" class="form-control" value="${item.staff_id}"></td>
-                    <td><input type="text" name="email" class="form-control" value="${item.email}"></td>
+                    <td><input type="text" name="sid" class="form-control"></td>
+                    <td><input type="text" name="email" class="form-control"></td>
                     <td><input type="text" name="passwd" class="form-control"></td>
                     <td><select class="form-control" name="isEff">
-                        <option <c:if test="${item.is_effective == 'true'}">selected</c:if> value="true">有效</option>
-                        <option <c:if test="${item.is_effective == 'false'}">selected</c:if> value="false">无效</option>
+                        <option value="true">有效</option>
+                        <option value="false">无效</option>
                     </select></td>
                     <td><input type="submit" class="btn btn-danger" value="添加"></td>
                 </form>
@@ -99,7 +99,7 @@
         </table>
     </div>
     <div class="add">
-        <form class="form-control" method="post">
+        <form class="form-control" method="post" action="/TeacherManage">
             <input type="hidden" name="method" value="fullAdd">
             <div class="form-group">
                 <label style="color: red;">教工号</label>
@@ -145,7 +145,7 @@
         </form>
     </div>
     <div class="modify">
-        <form class="form-control" method="post">
+        <form class="form-control" method="post" action="/TeacherManage">
             <input type="hidden" name="method" value="fullModify">
             <input type="hidden" name="id" id="id">
             <div class="form-group">

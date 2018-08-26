@@ -48,4 +48,13 @@ public class Admin_rightsDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void delete(String id) {
+        String sql = "delete from admin_rights where user_id=?";
+        try {
+            qr.update(sql, id);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

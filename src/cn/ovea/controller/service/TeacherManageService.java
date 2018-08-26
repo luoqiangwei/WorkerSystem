@@ -14,8 +14,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 public class TeacherManageService {
     Nanoflake nf;
@@ -112,5 +111,35 @@ public class TeacherManageService {
             ti.setQq(rsa.enCoding(ti.getQq()));
         }
         TID.fullModify(ti);
+    }
+
+    public void find(HttpServletRequest req, String keyWord) {
+        Teacher_information ti = TID.findByEmail(keyWord);
+        ti.setStaff_id(rsa.deCoding(ti.getStaff_id()));
+        if(ti.getName() != null && !ti.getName().equals("")){
+            ti.setName(rsa.deCoding(ti.getName()));
+        }
+        ti.setEmail(rsa.deCoding(ti.getEmail()));
+        if(ti.getPhone_number() != null && !ti.getPhone_number().equals("")){
+            ti.setPhone_number(rsa.deCoding(ti.getPhone_number()));
+        }
+        if(ti.getQq() != null && !ti.getQq().equals("")){
+            ti.setQq(rsa.deCoding(ti.getQq()));
+        }
+        if(ti.getHead_image_uri() != null && !ti.getHead_image_uri().equals("")){
+            ti.setHead_image_uri(rsa.deCoding(ti.getHead_image_uri()));
+        }
+        List<Teacher_information> teaList = new ArrayList<>();
+        teaList.add(ti);
+        req.setAttribute("teaList", teaList);
+    }
+
+    public void insertItem(Teacher_information ti) {
+        if(!ti.getPassword().trim().equals(""))
+            ti.setPassword(sha.SHA512Encoding(ti.getPassword()));
+        ti.setEmail(rsa.enCoding(ti.getEmail()));
+        ti.setStaff_id(rsa.enCoding(ti.getStaff_id()));
+        ti.setUser_id(nf.getNanoflake());
+        TID.add(ti);
     }
 }

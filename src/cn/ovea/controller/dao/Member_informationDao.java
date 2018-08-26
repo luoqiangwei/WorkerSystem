@@ -112,4 +112,40 @@ public class Member_informationDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void updateItem(Member_information mi) {
+        if(mi.getPassword().trim().equals("")){
+            String sql = "update member_information set email=?, student_id=? where user_id=?";
+            try {
+                qr.update(sql, mi.getEmail(), mi.getStudent_id(), mi.getUser_id());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }else{
+            String sql = "update member_information set email=?, student_id=?, password=? where user_id=?";
+            try {
+                qr.update(sql, mi.getEmail(), mi.getStudent_id(), mi.getPassword(), mi.getUser_id());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void fullModify(Member_information mi) {
+        if(mi.getPassword().trim().equals("")){
+            String sql = "update member_information set staff_id=?, name=?, email=?, phone_number=?, qq=?, sex=?, is_effective=?, grade=? where user_id=?";
+            try {
+                qr.update(sql, mi.getStudent_id(), mi.getName(), mi.getEmail(), mi.getPhone_number(), mi.getQq(), mi.isSex(), mi.isIs_effective(), mi.getGrade(), mi.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            String sql = "update member_information set staff_id=?, name=?, email=?, password=?, phone_number=?, qq=?, sex=?, is_effective=?, grade=? where user_id=?";
+            try {
+                qr.update(sql, mi.getStudent_id(), mi.getName(), mi.getEmail(), mi.getPassword(), mi.getPhone_number(), mi.getQq(), mi.isSex(), mi.isIs_effective(), mi.getGrade(), mi.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }

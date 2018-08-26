@@ -23,16 +23,13 @@
             <a href="MemberManage.jsp"><button class="btn btn-light form-control">成员管理</button></a>
         </div>
         <div class="form-group">
-            <a href="BulletinManage.jsp"><button class="btn btn-light form-control">公告管理</button></a>
+            <a href="/BulletinManage?method=pre"><button class="btn btn-light form-control">公告管理</button></a>
         </div>
         <div class="form-group">
-            <a href="PunchManage.jsp"><button class="btn btn-light form-control">打卡管理</button></a>
+            <a href="/PunchManage?method=pre"><button class="btn btn-light form-control">打卡管理</button></a>
         </div>
         <div class="form-group">
-            <a href="MissionManage.jsp"><button class="btn btn-light form-control">任务管理</button></a>
-        </div>
-        <div class="form-group">
-            <a href="AdminManage.jsp"><button class="btn btn-light form-control">管理员管理</button></a>
+            <a href="/AdminManage?method=pre"><button class="btn btn-light form-control">管理员管理</button></a>
         </div>
     </div>
 </div>

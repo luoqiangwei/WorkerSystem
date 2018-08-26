@@ -54,4 +54,13 @@ public class Punch_the_clockDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void delete(String id) {
+        String sql = "delete from punch_the_clock where punch_id=?";
+        try {
+            qr.update(sql, id);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

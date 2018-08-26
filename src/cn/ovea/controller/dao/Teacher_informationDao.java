@@ -87,9 +87,27 @@ public class Teacher_informationDao {
     }
 
     public void fullModify(Teacher_information ti){
-        String sql = "update teacher_information set staff_id=?, name=?, email=?, password=?, phone_number=?, qq=?, sex=?, is_effective=? where user_id=?";
+        if(ti.getPassword().trim().equals("")){
+            String sql = "update teacher_information set staff_id=?, name=?, email=?, phone_number=?, qq=?, sex=?, is_effective=? where user_id=?";
+            try {
+                qr.update(sql, ti.getStaff_id(), ti.getName(), ti.getEmail(), ti.getPhone_number(), ti.getQq(), ti.isSex(), ti.isIs_effective(), ti.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            String sql = "update teacher_information set staff_id=?, name=?, email=?, password=?, phone_number=?, qq=?, sex=?, is_effective=? where user_id=?";
+            try {
+                qr.update(sql, ti.getStaff_id(), ti.getName(), ti.getEmail(), ti.getPassword(), ti.getPhone_number(), ti.getQq(), ti.isSex(), ti.isIs_effective(), ti.getUser_id());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    public Teacher_information findByEmail(String keyWord) {
+        String sql = "select * form teacher_information where email=? and is_effective=1";
         try {
-            qr.update(sql, ti.getStaff_id(), ti.getName(), ti.getEmail(), ti.getPassword(), ti.getPhone_number(), ti.getQq(), ti.isSex(), ti.isIs_effective(), ti.getUser_id());
+            return qr.query(sql, new BeanHandler<Teacher_information>(Teacher_information.class), keyWord);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

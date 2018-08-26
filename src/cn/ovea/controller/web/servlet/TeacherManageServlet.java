@@ -16,6 +16,30 @@ public class TeacherManageServlet extends BaseServlet {
         return "f:/jsp/admin/TeacherManage.jsp";
     }
 
+    public String insertItem(HttpServletRequest req, HttpServletResponse resp){
+        String sid = req.getParameter("sid");
+        String email = req.getParameter("email");
+        String passwd = req.getParameter("passwd");
+        Boolean isEff = Boolean.parseBoolean(req.getParameter("isEff"));
+        Teacher_information ti = new Teacher_information();
+        ti.setStaff_id(sid);
+        ti.setEmail(email);
+        ti.setPassword(passwd);
+        ti.setIs_effective(isEff);
+        TMS.insertItem(ti);
+        return "f:/jsp/admin/TeacherManage.jsp";
+    }
+
+    public String find(HttpServletRequest req, HttpServletResponse resp){
+        String keyWord = req.getParameter("find");
+        if(keyWord.trim().equals("")){
+            req.setAttribute("msg", "请输入关键词。");
+            return "f:/jsp/admin/TeacherManage.jsp";
+        }
+        TMS.find(req, keyWord);
+        return "f:/jsp/admin/TeacherManage.jsp";
+    }
+
     public String updateItem(HttpServletRequest req, HttpServletResponse resp){
 //        System.out.println(req.getParameter("sid"));
         String id = req.getParameter("id");
@@ -34,16 +58,18 @@ public class TeacherManageServlet extends BaseServlet {
             return "f:/TeacherManage?method=findAll";
         }
 
-        if(passwd.trim().length() != 0 && passwd.length() < 8){
-            req.setAttribute("msg", "密码过短。");
-            return "f:/TeacherManage?method=findAll";
-        }
+        if(!passwd.trim().equals("")){
+            if(passwd.trim().length() != 0 && passwd.length() < 8){
+                req.setAttribute("msg", "密码过短。");
+                return "f:/TeacherManage?method=findAll";
+            }
 
-        if(passwd.trim().length() != 0 && passwd.length() > 20){
-            req.setAttribute("msg", "密码过长。");
-            return "f:/TeacherManage?method=findAll";
-        }
+            if(passwd.trim().length() != 0 && passwd.length() > 20){
+                req.setAttribute("msg", "密码过长。");
+                return "f:/TeacherManage?method=findAll";
+            }
 
+        }
         Teacher_information ti = new Teacher_information();
         ti.setUser_id(id);
         ti.setStaff_id(sid);
@@ -117,9 +143,16 @@ public class TeacherManageServlet extends BaseServlet {
             return "f:/TeacherManage?method=findAll";
         }
 
-        if(password.trim().length() != 0 && password.length() < 8){
-            req.setAttribute("msg", "密码过短。");
-            return "f:/TeacherManage?method=findAll";
+        if(!password.trim().equals("")){
+            if(password.trim().length() != 0 && password.length() < 8){
+                req.setAttribute("msg", "密码过短。");
+                return "f:/jsp/admin/MemberManage.jsp";
+            }
+
+            if(password.trim().length() != 0 && password.length() > 20){
+                req.setAttribute("msg", "密码过长。");
+                return "f:/jsp/admin/MemberManage.jsp";
+            }
         }
 
         Teacher_information ti = new Teacher_information();

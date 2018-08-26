@@ -13,3 +13,38 @@ var showFullAdd = function () {
     show.style.display = "none";
     add.style.display = "block";
 }
+
+var showFullModify = function (user_id, sid, name, email, phone, qq, sex, grade, isEff){
+    var show = document.getElementsByClassName("show")[0];
+    var modify = document.getElementsByClassName("modify")[0];
+    var idInput = document.getElementById("id");
+    idInput.value = user_id;
+    var sidInput = document.getElementById("sid");
+    sidInput.value = sid;
+    var nameInput = document.getElementById("name");
+    nameInput.value = name;
+    var emailInput = document.getElementById("email");
+    emailInput.value = email;
+    var phoneInput = document.getElementById("phone");
+    phoneInput.value = phone;
+    var qqInput = document.getElementById("qq");
+    qqInput.value = qq;
+    var sexT = document.getElementById("sexT");
+    var sexF = document.getElementById("sexF");
+    if(sex == "true"){
+        sexT.selected = true;
+    }else{
+        sexF.selected = true;
+    }
+    var gradeInput = document.getElementById("grade");
+    gradeInput.value = grade;
+    var isET = document.getElementById("isET");
+    var isEF = document.getElementById("isEF");
+    if(isEff == "true"){
+        isET.selected = true;
+    }else{
+        isEF.selected = true;
+    }
+    show.style.display = "none";
+    modify.style.display = "block";
+}
